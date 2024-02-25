@@ -927,10 +927,8 @@ body, html {
 
 /* Estilos para teléfonos móviles (hasta 600px) */
 @media (max-width: 600px) {
-    /* Ajustes generales para reducir padding y márgenes */
     .container,
     .intro-section,
-    .events-section,
     .sponsors-carousel-container,
     .champion-section,
     .testimonials-section,
