@@ -834,6 +834,10 @@ body, html {
   .social-icons {
     text-align: right; /* Alinea los íconos a la derecha */
   }
+
+  .github-link {
+    color: #6060ea ;
+  }
   
   .social-icons a {
     margin: 0 0.625rem; /* 10px Espaciado entre íconos */
