@@ -75,9 +75,9 @@ body, html {
 
 .navbar-toggle .bar {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    width: 28px;
+    height: 4px;
+    margin: 6px auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-color: #fff;
@@ -141,7 +141,7 @@ body, html {
 }
 
 .intro-section h1 {
-    font-size: 8rem; /* Ajusta el tamaño según el diseño */
+    font-size: 6.5rem; /* Ajusta el tamaño según el diseño */
     color: #7694ff;
     margin-bottom: 0.5rem;
     font-weight: 750;
@@ -285,7 +285,7 @@ body, html {
 }
 
 .events-section h3 {
-    font-size: 1rem; /* Tamaño de la fuente para h3 dentro de events-section */
+    font-size: 1.35rem; /* Tamaño de la fuente para h3 dentro de events-section */
     font-weight: 750; /* Grosor de la fuente para h3 */
 }
 
@@ -342,7 +342,7 @@ body, html {
 .event-features {
     list-style: none; /* Elimina los estilos por defecto de la lista */
     padding: 0; /* Elimina el relleno por defecto */
-    margin: 1.25rem 0; /* 20px 0 Margen vertical para separar de otros elementos */
+    margin: 1.4rem 0; /* 20px 0 Margen vertical para separar de otros elementos */
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
@@ -362,7 +362,7 @@ body, html {
 
 /* Estilos para el precio dentro de la tarjeta */
 .event-price {
-    font-size: 1.3rem; /* Tamaño de la fuente para el precio */
+    font-size: 1.5rem; /* Tamaño de la fuente para el precio */
     color: #7694FF; /* Color del texto */
     margin: 1.25rem 0; /* 20px 0 Margen vertical para separar de otros elementos */
     font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
@@ -370,7 +370,7 @@ body, html {
 }
 
 .event-price-center {
-    font-size: 1.3rem; /* Tamaño de la fuente para el precio */
+    font-size: 1.5rem; /* Tamaño de la fuente para el precio */
     color: #ffffff; /* Color del texto */
     margin: 1.25rem 0; /* 20px Margen vertical para separar de otros elementos */
     font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
@@ -410,6 +410,10 @@ body, html {
     color: #fff; /* Color para h3 */
 }
 
+
+.info-costados {
+    color: #7d97ff; /* Color para h3 */
+}
 
 /* Estilos específicos para tarjetas individuales */
 /* Tarjeta izquierda */
@@ -502,6 +506,12 @@ body, html {
     z-index: 2;
 }
 
+.parrafo-sponsor {
+    font-size: 1.3rem; /* Tamaño de fuente para el párrafo */
+    color: #B1ACFF; /* Color de fuente para el párrafo */
+    margin-bottom: 1.25rem; /* 20px Espacio debajo del párrafo */
+}
+
 
 .sponsor-image {
     width: calc(50% - 40px); /* Reducir el ancho para compensar el padding */
@@ -513,11 +523,27 @@ body, html {
     z-index: 2; /* Asegura que la imagen del patrocinador esté por encima de la decorativa */
 }
 
+.sponsor-image_s2 {
+    width: calc(50% - 40px); /* Reducir el ancho para compensar el padding */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea la imagen a la derecha */
+    padding: -1.25rem; /* -20px Ajustar el padding según sea necesario */
+    position: relative; /* Posiciona relativamente los pseudo-elementos dentro */
+    z-index: 2; /* Asegura que la imagen del patrocinador esté por encima de la decorativa */ 
+}
+
 .sponsor-image img {
-    width: 15rem; /* 240px Mantiene el aspecto original de la imagen */
-    height: 15rem; /* 240px Altura fija para mantener la consistencia */
+    width: 25rem; /* 240px Mantiene el aspecto original de la imagen */
+    height: 25rem; /* 240px Altura fija para mantener la consistencia */
     z-index: 3; /* Asegura que la imagen del patrocinador esté por encima de la decorativa */
     border-radius: 0.8125rem; /* 13px Añade bordes redondeados a la imagen */
+}
+
+ .sponsor-image_s2 img{
+    width: 25rem; /* 240px Mantiene el aspecto original de la imagen */
+    height: 35rem; /* 240px Altura fija para mantener la consistencia */
+    z-index: 3; /* Asegura que la imagen del patrocinador esté por encima de la decorativa */
 }
 
 .sponsor-image::after {
@@ -525,7 +551,6 @@ body, html {
     display: block;
     width: calc(100% + 13.125rem); /* 210px Aumenta el ancho en 60px */
     height: calc(100% + 13.125rem); /* 210px Aumenta la altura en 60px */
-    background: url('recursos/FondoSponsors.png') no-repeat center center / contain;
     position: absolute;
     top: 47.4%;
     left: 87.1%;
@@ -624,7 +649,7 @@ body, html {
     background: #6060EA; /* Color de fondo del cuadro */
     border-radius: 1.25rem; /* 20px Bordes redondeados */
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* 0 4px 8px Sombra de caja */
-    padding: 3.125rem; /* 50px Espaciado interno */
+    padding: 2rem; /* 50px Espaciado interno */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -730,14 +755,16 @@ body, html {
 
   
   .testimonial-text {
-    font-size: 1.7rem; /* Or your desired size */
+    font-size: 1.4rem; /* Or your desired size */
     line-height: 1.5;
     margin-bottom: 0.5em;
+    color: #B1ACFF;
+    font-weight: 700;
   }
   
   .testimonial-author {
     font-weight: bold;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     font-size: 1.5rem;
   }
   
@@ -823,20 +850,65 @@ body, html {
     display: inline-flex; /* Usa flex para alinear el ícono al centro */
     align-items: center; /* Centra el ícono verticalmente */
     justify-content: center; /* Centra el ícono horizontalmente */
-    width: 2rem; /* 30px Tamaño del círculo */
-    height: 2rem; /* 30px Tamaño del círculo */
+    width: 3.6rem; /* 30px Tamaño del círculo */
+    height: 3.6rem; /* 30px Tamaño del círculo */
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.2); /* 0px 0px 5px Sombra suave */
   }
   
   .social-icons a:hover {
     color: black; /* Cambia el color al pasar el ratón por encima */
-      background-color: #e3c0ff; /* Cambia el fondo al pasar el ratón por encima */
+    background-color: #e3c0ff; /* Cambia el fondo al pasar el ratón por encima */
+  }
+
+  .social-icons .fab {
+    font-size: 1.6rem; /* Ajusta esto según el tamaño deseado */
+}
+
+  .seccion {
+    margin: 50px 0; /* Espacio por defecto entre secciones */
   }
   
-
 /*------------------------------------------*/
 
 /* Media Queries para Responsividad */
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .intro-section h1 {
+        font-size: 6rem; /* Reduce el tamaño del texto para pantallas medianas */
+    }
+
+    .intro-section h2 {
+        font-size: 2.2rem; /* Ajusta según sea necesario */
+    }
+
+    .intro-section h1 {
+        font-size: 3.7rem; /* Ajusta este valor según sea necesario */
+    }
+       /* Ajustes para las secciones de eventos y patrocinadores */
+       .event-card-container,
+       .sponsor-info,
+       .champion-content,
+       .testimonial-item {
+           max-width: 100%; /* Ajuste del ancho al 100% para ocupar el espacio disponible */
+           margin: 20px 0; /* Espaciado adicional arriba y abajo */
+       }
+    
+    .event-cards-container {
+        flex-direction: column; /* Acomoda las tarjetas de eventos en columna */
+        gap: 25px; /* Espaciado entre tarjetas */
+    }
+
+    .event-card-container {
+        flex-direction: column; /* Las tarjetas se apilan verticalmente */
+        width: 77%; /* Ajusta el ancho al 100% para que ocupen todo el espacio */
+    }
+
+    .event-card {
+        box-shadow: none; /* Eliminar sombras para un aspecto más limpio */
+    }
+
+}
+
 
 /* Estilos para teléfonos móviles (hasta 600px) */
 @media (max-width: 600px) {
@@ -882,14 +954,27 @@ body, html {
     .navbar .nav-links.active {
         display: flex; /* Muestra los enlaces */
         position: fixed; /* Fijo para que ocupe toda la pantalla */
-        top: 60px;
+        top: 60px; /* Ajusta esto dependiendo de la altura de tu barra de navegación */
         left: 0;
         right: 0;
-        bottom: 0;
-        flex-direction: column;
-        align-items: center; /* Centrar enlaces horizontalmente */
-        justify-content: center; /* Centrar enlaces verticalmente */
+        /* bottom: 0; Quitamos esto para no ocupar toda la pantalla */
+        height: calc(100% - 60px); /* Altura completa menos la altura de la barra de navegación */
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        align-items: center; /* Centra los enlaces horizontalmente */
+        justify-content: center; /* Centra los enlaces verticalmente */
+        background: linear-gradient(
+            to bottom,
+          rgba(120, 0, 241, 0) 0%, 
+          rgba(177, 172, 255, 1.0) 30%, /* Inicio del color sólido del centro */
+          rgba(118, 148, 255, 1.0) 50%, /* Punto medio donde el color es más sólido */
+          rgba(177, 172, 255, 1.0) 70%, /* Fin del color sólido del centro */
+          rgba(120, 0, 241, 0) 100% /* Vuelve a ser transparente hacia el final */
+        );
+
+
         z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+        overflow-y: auto; /* Permite desplazar si el contenido es demasiado largo */
+        transition: all 0.3s ease; /* Transición suave al abrir y cerrar */
     }
 
     .navbar .nav-links li {
@@ -960,8 +1045,8 @@ body, html {
     .social-icons a {
         margin: 0 10px; /* Espaciado entre los íconos sociales */
         background-color: #fff; /* Fondo blanco para los círculos */
-        width: 25px; /* Tamaño del círculo */
-        height: 25px; /* Tamaño del círculo */
+        width: 30px; /* Tamaño del círculo */
+        height: 30px; /* Tamaño del círculo */
 
     }
 
@@ -969,13 +1054,40 @@ body, html {
         margin-top: 20px; /* Espaciado adicional arriba de los íconos sociales */
         justify-content: center; /* Centrar los íconos horizontalmente */
     }
+    .github-link {
+        display: flex;
+        align-items: center;
+    }
+    
+    .github-link a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .github-link i {
+        font-size: 1.5rem; /* Reduce el tamaño del ícono */
+        margin-right: 5px; /* Espacio entre el ícono y el texto */
+    }
+
+    .github-link span {
+    font-size: 0.8rem;
+    }
+
 
     /* Ajustes para las imágenes de testimonios y campeones */
-    .testimonial-image img,
     .champion-logo img {
-        width: 100px; /* Tamaño reducido para las imágenes */
-        height: 100px;
+        width: 140px; /* Tamaño reducido para las imágenes */
+        height: 140px;
         margin: 0 auto; /* Centrar las imágenes */
+    }
+
+    .testimonial-image img {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+        margin-top: 25px;
     }
 
     /* Ajustes para los botones de contacto */
@@ -984,12 +1096,26 @@ body, html {
     .sponsor-button {
         font-size: 0.9rem; /* Tamaño de fuente más pequeño para los botones */
         padding: 10px 20px; /* Padding reducido para los botones */
+        font-weight: 800;
+    }
+    .sponsor-image img {
+        width: 15rem; /* 240px Mantiene el aspecto original de la imagen */
+        height: 15rem; /* 240px Altura fija para mantener la consistencia */
+        z-index: 3; /* Asegura que la imagen del patrocinador esté por encima de la decorativa */
+        border-radius: 0.8125rem; /* 13px Añade bordes redondeados a la imagen */
+        margin-left: 30px;
+    }
+    
+    .sponsor-image_s2 img {
+        width: 14rem; /* 240px Mantiene el aspecto original de la imagen */
+        height: 19rem; /* 240px Altura fija para mantener la consistencia */
+        z-index: 3; /* Asegura que la imagen del patrocinador esté por encima de la decorativa */
+        border-radius: 0.8125rem; /* 13px Añade bordes redondeados a la imagen */
     }
 
     /* Ajustes para ocultar detalles decorativos que no son esenciales en móviles */
     .intro-section::before,
-    .event-background,
-    .sponsor-image::after {
+    .event-background {
         display: none; /* Ocultar elementos decorativos de fondo */
     }
       
@@ -998,7 +1124,11 @@ body, html {
 /*----------------------------------------------------------------------------------*/
 
 /* Estilos para teléfonos móviles (hasta 415px) */
-@media (max-width: 415px) {
+@media (max-width: 430px) {
+    
+    .seccion {
+        margin: 0px 0; /* Reduce el espacio entre secciones solo para dispositivos móviles */
+      }
     /* Ajustes generales para reducir padding y márgenes */
     .container,
     .intro-section,
@@ -1007,8 +1137,20 @@ body, html {
     .champion-section,
     .testimonials-section,
     .footer {
-        padding: 20px; /* Reducción adicional del espaciado para contenedores */
+        padding: 10px; /* Reducción adicional del espaciado para contenedores */
     }
+
+.testimonial-section {
+    padding-top: 50px;
+    height: 0vh;
+}
+      
+.intro-section {
+    padding-top: 50px;
+    height: 0vh;
+    margin-top: 125px;
+}
+
 
     /* Ajustes para la barra de navegación */
     .navbar {
@@ -1017,14 +1159,14 @@ body, html {
     }
 
     .navbar .logo {
-        width: 40px; /* Tamaño del logo aún más reducido */
-        height: 40px;
-        top: 5px;
-        left: 5px; /* Ajuste de posición más cerca del borde */
+        width: 50px; /* Tamaño del logo aún más reducido */
+        height: 50px;
+        top: 0px;
+        left: 35px; /* Ajuste de posición más cerca del borde */
     }
 
     .navbar .logo img {
-        height: 30px; /* Ajuste del tamaño del logo */
+        height: 40px; /* Ajuste del tamaño del logo */
     }
 
     .navbar .nav-links.active {
@@ -1032,8 +1174,8 @@ body, html {
     }
 
     .navbar .navbar-toggle {
-        top: 5px; /* Ajuste de la posición vertical */
-        right: 5px; /* Ajuste de la posición horizontal */
+        top: 0px; /* Ajuste de la posición vertical */
+        right: 15px; /* Ajuste de la posición horizontal */
     }
 
     /* Ajustes para la sección de introducción */
@@ -1060,7 +1202,7 @@ body, html {
     }
 
     .intro-section p {
-        font-size: 1.1rem; /* Ajusta el tamaño según el diseño */
+        font-size: 1.5rem; /* Ajusta el tamaño según el diseño */
         margin-bottom: 2rem;
         max-width: 43.75rem; /* 700px */
         margin-left: auto;
@@ -1083,50 +1225,47 @@ body, html {
         margin-bottom: 20px; /* Espacio debajo del texto antes del botón */
     }
 
-    .home-content {
-        flex: none; /* Anula la propiedad flex si se aplicó anteriormente */
-        padding: 0; /* Remueve el padding para evitar desplazamientos no deseados */
-        margin: 0 auto; /* Centra el contenido horizontalmente */
-        text-align: center; /* Alinea el texto al centro */
-        max-width: 100%; /* Permite que el contenido ocupe todo el ancho disponible */
-        order: 2;
-        margin-bottom: 500px;
-        margin-top: -145px;
+.home-content {
+    flex: none; /* Anula la propiedad flex si se aplicó anteriormente */
+    padding: 0; /* Remueve el padding para evitar desplazamientos no deseados */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+    max-width: 100%; /* Permite que el contenido ocupe todo el ancho disponible */
+    order: 2;
+    margin-bottom: 500px;
+    margin-top: -145px;
+}
 
-    }
-
-
-    /* Ajustes para la imagen dentro de la sección home */
-    .home-image img {
-        width: 300px; /* Anula cualquier ancho definido previamente y usa el ancho natural de la imagen */
-        max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
-        height: 300px; /* Mantiene la proporción de la imagen */
-        margin-top: 80px;
-    }
+.home-image img {
+    width: 300px; /* Anula cualquier ancho definido previamente y usa el ancho natural de la imagen */
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: 300px; /* Mantiene la proporción de la imagen */
+    margin-top: 80px;
+}
     
-    .contact-intro {
-        margin-top: -5px;
-        font-size: 17px;
-    }
+.contact-intro {
+    margin-top: -5px;
+    font-size: 17px;
+}
 
-    /*-------------------SPONSORS--------------------------*/
+/*-------------------SPONSORS--------------------------*/
 
-    .sponsors-carousel-container h1 {
-        font-size: 2.3rem;
-        color: #7694ff;
-        font-weight: 660;
-        margin-bottom: 2rem;
-        text-align: left;
-    }
+.sponsors-carousel-container h1 {
+    font-size: 2.3rem;
+    color: #7694ff;
+    font-weight: 660;
+    margin-bottom: 2rem;
+    text-align: left;
+}
     
-    .sponsors-carousel-container h2 {
-        font-size: 1.5rem;
-        color: #ccb7ff;
-        font-weight: 750;
-        margin-bottom: -0.5rem;
-        margin-top: 3.5rem;
-        text-align: left;
-    }
+.sponsors-carousel-container h2 {
+    font-size: 1.5rem;
+    color: #ccb7ff;
+    font-weight: 750;
+    margin-bottom: -0.5rem;
+    margin-top: 3.5rem;
+    text-align: left;
+}
     
 
 .sponsors-carousel-container {
@@ -1175,48 +1314,59 @@ body, html {
     border-radius: 0.8125rem; /* 13px Añade bordes redondeados a la imagen */
 }
 
+.sponsor-image_s2 img {
+    width: 26rem;
+    height: 26rem;
+    z-index: 3;
+    border-radius: 0.8125rem;
+    margin-left: -15px; /* Ajusta el valor según sea necesario */
+}
+
 /*-------------------------------------------------*/
-
-
-
-    .champion-content h2 {
-        font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
-        margin-bottom: 0.3125rem; /* 5px Espacio debajo de "TOP 1" */
-        font-size: 1.3rem; /* Tamaño del texto de "TOP 1" */
-        color: #FFCCFF; /* Color del texto de "TOP 1" */
-      }
+.champion-section {
+    padding-top: 50px;
+    height: 60vh;
+  }
+  
+.champion-content h2 {
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
+    margin-bottom: 0.3125rem; /* 5px Espacio debajo de "TOP 1" */
+    font-size: 1.6rem; /* Tamaño del texto de "TOP 1" */
+    color: #FFCCFF; /* Color del texto de "TOP 1" */
+}
       
-      .champion-content p {
-        margin-bottom: 0.125rem; /* 2px Espacio debajo de la descripción */
-        font-size: .7rem; /* Tamaño del texto de la descripción */
-        color: #B1ACFF; /* Color del texto de la descripción */
-      }
+.champion-content p {
+    margin-bottom: 1rem; /* 2px Espacio debajo de la descripción */
+    font-size: 1.1rem; /* Tamaño del texto de la descripción */
+    color: #B1ACFF; /* Color del texto de la descripción */
+    text-align:center;
+}
       
-      .champion-content h1 {
-        font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
-        font-size: 1.7rem; /* Tamaño del texto de "CHAMPION" */
-        font-weight: bold; /* Negrita para "CHAMPION" */
-        margin-bottom: 0.3125rem; /* 5px Espacio debajo de "CHAMPION" */
-        color: #FFCCFF; /* Color del texto de "CHAMPION" */
-        align-self: center;
-      }
+.champion-content h1 {
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
+    font-size: 1.7rem; /* Tamaño del texto de "CHAMPION" */
+    font-weight: bold; /* Negrita para "CHAMPION" */
+    margin-bottom: 0.3125rem; /* 5px Espacio debajo de "CHAMPION" */
+    color: #FFCCFF; /* Color del texto de "CHAMPION" */
+    align-self: center;
+}
 
-      .top-right-text {
-        font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
-        position: absolute; /* Posicionamiento absoluto */
-        top: 0; /* En la parte superior del contenedor */
-        right: 0; /* En el lado derecho del contenedor */
-        padding: 1.25rem; /* 20px Un poco de espacio alrededor del texto */
-        color: #ffffff; /* Texto en color blanco */
-        font-size: 1.3rem; /* Tamaño de la fuente */
-        font-weight: bold; /* Negrita */
-        z-index: 10; /* Asegúrate de que esté por encima de otros elementos si es necesario */
-    }
+.top-right-text {
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* En la parte superior del contenedor */
+    right: 0; /* En el lado derecho del contenedor */
+    padding: 1.25rem; /* 20px Un poco de espacio alrededor del texto */
+    color: #ffffff; /* Texto en color blanco */
+    font-size: 1.3rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    z-index: 10; /* Asegúrate de que esté por encima de otros elementos si es necesario */
+}
     
+.contact-button {
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    margin-top: 20px; /* Espacio por encima del botón de contacto */
+    align-self: center; /* Centra el botón en el contenedor */
+}
 
-    .contact-button {
-        padding: 10px 20px; /* Ajusta el relleno según sea necesario */
-        margin-top: 20px; /* Espacio por encima del botón de contacto */
-        align-self: center; /* Centra el botón en el contenedor */
-    }
 }

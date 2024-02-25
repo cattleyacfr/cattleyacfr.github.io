@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
-    }, 3000); // Cambia cada 3 segundos
+    }, 5000); // Cambia cada 5 segundos
 });
 
 
@@ -65,6 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
       nextItem.classList.remove('hidden'); // Eliminar clase 'hidden' para mostrar
     }
   
-    setInterval(cycleItems, 2500);
+    setInterval(cycleItems, 5000);
   });
   
