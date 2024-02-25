@@ -865,6 +865,11 @@ body, html {
 /*------------------------------------------*/
 
 /* Media Queries para Responsividad */
+@media only screen and (min-width: 881px) and (max-width: 1199px) {
+    .event-background{
+        display: none;
+    }
+}
 
 @media only screen and (min-width: 601px) and (max-width: 880px) {
     .intro-section h1 {
@@ -900,7 +905,7 @@ body, html {
     .event-card {
         box-shadow: none; /* Eliminar sombras para un aspecto más limpio */
     }
-    
+
     .event-background {
         display: none; /* Ocultar elementos decorativos de fondo */
     }
