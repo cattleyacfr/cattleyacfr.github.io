@@ -1304,28 +1304,49 @@ body, html {
     padding: -1.25rem; /* -20px Ajustar el padding según sea necesario */
     position: relative; /* Posiciona relativamente los pseudo-elementos dentro */
     left: 16%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .sponsor-image img {
-    width: 15rem; /* 240px Mantiene el aspecto original de la imagen */
-    height: 15rem; /* 240px Altura fija para mantener la consistencia */
+    width: 11rem; /* Mantiene el aspecto original de la imagen */
+    height: 11rem; /* Altura fija para mantener la consistencia */
     z-index: 3; /* Asegura que la imagen del patrocinador esté por encima de la decorativa */
     border-radius: 0.8125rem; /* 13px Añade bordes redondeados a la imagen */
 }
 
+.sponsor-image_s2 {
+    width: calc(50% - 40px); /* Reducir el ancho para compensar el padding */
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Alinea la imagen a la derecha */
+    padding: -1.25rem; /* -20px Ajustar el padding según sea necesario */
+    position: relative; /* Posiciona relativamente los pseudo-elementos dentro */
+    left: 26%;
+    margin-top: 15px;
+}
+
 .sponsor-image_s2 img {
-    width: 26rem;
-    height: 26rem;
+    width: 17rem;
+    height: 17rem;
     z-index: 3;
     border-radius: 0.8125rem;
-    margin-left: -15px; /* Ajusta el valor según sea necesario */
+}
+
+.sponsor-year {
+    font-size: 1.2rem; /* Tamaño de fuente para 'sponsor 2024' */
+    /*alinearlo a la izquierda*/
+    margin-right: 16rem; /* 140px Espacio a la derecha del texto para separarlo de la línea */
+
+}
+
+.line-decor{
+    display: none;
 }
 
 /*-------------------------------------------------*/
 .champion-section {
     padding-top: 50px;
-    height: 60vh;
+    height: 100vh;
   }
   
 .champion-content h2 {
