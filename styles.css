@@ -653,6 +653,7 @@ body, html {
     width: 15.625rem; /* 250px Tamaño del logo */
     height: auto; /* Para mantener la proporción de la imagen */
     margin-bottom: 0.625rem; /* 10px Espacio debajo del logo */
+    margin-top: 1.5rem;
  
   }
   
@@ -684,7 +685,7 @@ body, html {
   .top-right-text {
     font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
     position: absolute; /* Posicionamiento absoluto */
-    top: 0; /* En la parte superior del contenedor */
+    top: 2rem; /* En la parte superior del contenedor */
     left: 50%;
     transform: translate(-50%, -50%); /* Compensa el ancho y alto del elemento */
     padding: 1.25rem; /* 20px Un poco de espacio alrededor del texto */
