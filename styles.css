@@ -883,7 +883,7 @@ body, html {
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 880px) {
+@media only screen and (min-width: 631px) and (max-width: 880px) {
 
 
     .intro-section h2 {
@@ -926,7 +926,7 @@ body, html {
 
 
 /* Estilos para teléfonos móviles (hasta 600px) */
-@media (max-width: 600px) {
+@media (max-width: 630px) {
     .container,
     .intro-section,
     .sponsors-carousel-container,
