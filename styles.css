@@ -489,11 +489,13 @@ body, html {
     left: 0; /* Empieza desde el borde izquierdo */
     opacity: 0; /* Inicia invisible */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Suaviza la transición */
+    z-index: 1; /* Menor prioridad para slides inactivos */
 }
 
 .sponsors-slide.active {
     opacity: 1; /* Hace visible el slide activo */
     transform: translateX(0%); /* Posición para el slide activo */
+    z-index: 2; /* Mayor prioridad para el slide activo */
 }
 
 .sponsor-info {
@@ -546,18 +548,6 @@ body, html {
     z-index: 3; /* Asegura que la imagen del patrocinador esté por encima de la decorativa */
 }
 
-.sponsor-image::after {
-    content: '';
-    display: block;
-    width: calc(100% + 13.125rem); /* 210px Aumenta el ancho en 60px */
-    height: calc(100% + 13.125rem); /* 210px Aumenta la altura en 60px */
-    position: absolute;
-    top: 47.4%;
-    left: 87.1%;
-
-    transform: translate(-50%, -50%); /* Centrado perfecto */
-    z-index: -1;
-}
 
 
 .contact-button {
@@ -589,6 +579,7 @@ body, html {
 
 .button-container {
     text-align: left; /* Centra el botón en el contenedor */
+    z-index: 1000;
 }
 
 .sponsor-footer {
@@ -662,6 +653,7 @@ body, html {
     width: 15.625rem; /* 250px Tamaño del logo */
     height: auto; /* Para mantener la proporción de la imagen */
     margin-bottom: 0.625rem; /* 10px Espacio debajo del logo */
+ 
   }
   
   .champion-content {
@@ -693,7 +685,8 @@ body, html {
     font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
     position: absolute; /* Posicionamiento absoluto */
     top: 0; /* En la parte superior del contenedor */
-    right: 0; /* En el lado derecho del contenedor */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Compensa el ancho y alto del elemento */
     padding: 1.25rem; /* 20px Un poco de espacio alrededor del texto */
     color: #ffffff; /* Texto en color blanco */
     font-size: 2rem; /* Tamaño de la fuente */
@@ -1081,6 +1074,7 @@ body, html {
         width: 140px; /* Tamaño reducido para las imágenes */
         height: 140px;
         margin: 0 auto; /* Centrar las imágenes */
+        margin-top: 1.2rem;
     }
 
     .testimonial-image img {
@@ -1375,8 +1369,9 @@ body, html {
 .top-right-text {
     font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces de navegación */
     position: absolute; /* Posicionamiento absoluto */
-    top: 0; /* En la parte superior del contenedor */
-    right: 0; /* En el lado derecho del contenedor */
+    top: 1.5rem; /* En la parte superior del contenedor */
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 1.25rem; /* 20px Un poco de espacio alrededor del texto */
     color: #ffffff; /* Texto en color blanco */
     font-size: 1.3rem; /* Tamaño de la fuente */
