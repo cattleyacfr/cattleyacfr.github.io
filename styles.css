@@ -1008,23 +1008,74 @@ body, html {
         text-align: center; /* Centrar texto para títulos y párrafos */
     }
 
-    .intro-section h1 {
-        font-size: 2.5rem; /* Tamaño de fuente más pequeño para h1 */
-    }
 
-    .intro-section h2 {
-        font-size: 2rem; /* Tamaño de fuente más pequeño para h2 */
-    }
 
-    .intro-section p {
-        font-size: 1rem; /* Tamaño de fuente más pequeño para párrafos */
+        /* Ajustes para la sección de introducción */
+        .intro-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Alinea los elementos en el centro */
+            justify-content: center; /* Centra los elementos verticalmente */
+        }
+    
+        /* Estilos para los títulos 'COFRADÍA' y 'CATTLEYA' */
+        .intro-section h1 {
+            text-align: center; /* Centra los títulos */
+            width: 100%; /* Fuerza a los títulos a ocupar todo el ancho disponible */
+            margin-top: -40px; /* Espacio adicional en la parte superior */
+            margin-bottom: 30px; /* Espacio debajo de los títulos */
+            font-size: 2.5rem; /* Tamaño de fuente más pequeño para h1 */
+        }
+    
+        .intro-section h2 {
+            text-align: center; /* Centra los títulos */
+            width: 100%; /* Fuerza a los títulos a ocupar todo el ancho disponible */
+            margin-top: 80px; /* Espacio adicional en la parte superior */
+            margin-bottom: 30px; /* Espacio debajo de los títulos */
+            font-size: 2rem; /* Tamaño de fuente más pequeño para h2 */
+        }
+    
+        .intro-section p {
+            font-size: 1.5rem; /* Ajusta el tamaño según el diseño */
+            margin-bottom: 2rem;
+            max-width: 43.75rem; /* 700px */
+            margin-left: auto;
+            margin-right: auto;
+            color: #a6a6a6;
+            text-align: center;
+        }    
+    
+        /* Estilos para el logo */
+        .intro-section .home-image {
+            width: 100%; /* Fuerza a la imagen a ocupar todo el ancho disponible */
+            display: flex;
+            justify-content: center; /* Centra la imagen */
+            margin-bottom: 40px; /* Espacio debajo del logo */
+        }
+    
+        /* Estilos para el texto y el botón 'Contact us' */
+        .intro-section {
+            width: 100%; /* Fuerza al contenido a ocupar todo el ancho disponible */
+            margin-bottom: 20px; /* Espacio debajo del texto antes del botón */
+        }
+    
+    .home-content {
+        flex: none; /* Anula la propiedad flex si se aplicó anteriormente */
+        padding: 0; /* Remueve el padding para evitar desplazamientos no deseados */
+        margin: 0 auto; /* Centra el contenido horizontalmente */
+        text-align: center; /* Alinea el texto al centro */
+        max-width: 100%; /* Permite que el contenido ocupe todo el ancho disponible */
+        order: 2;
+        margin-bottom: 500px;
+        margin-top: -145px;
     }
-
+    
     .home-image img {
-        width: 100%; /* Ajuste de la imagen para que ocupe el ancho completo */
-        margin: 20px 0; /* Espaciado adicional arriba y abajo de la imagen */
+        width: 300px; /* Anula cualquier ancho definido previamente y usa el ancho natural de la imagen */
+        max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+        height: 300px; /* Mantiene la proporción de la imagen */
+        margin-top: 80px;
     }
-
     /* Ajustes para las secciones de eventos y patrocinadores */
     .event-card-container,
     .sponsor-info,
