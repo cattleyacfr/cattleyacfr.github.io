@@ -1039,8 +1039,8 @@ body, html {
     .social-icons a {
         margin: 0 10px; /* Espaciado entre los íconos sociales */
         background-color: #fff; /* Fondo blanco para los círculos */
-        width: 30px; /* Tamaño del círculo */
-        height: 30px; /* Tamaño del círculo */
+        width: 40px; /* Tamaño del círculo */
+        height: 40px; /* Tamaño del círculo */
 
     }
 
