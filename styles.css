@@ -866,7 +866,7 @@ body, html {
 
 /* Media Queries para Responsividad */
 
-@media only screen and (min-width: 601px) and (max-width: 800px) {
+@media only screen and (min-width: 601px) and (max-width: 880px) {
     .intro-section h1 {
         font-size: 6rem; /* Reduce el tamaño del texto para pantallas medianas */
     }
@@ -900,8 +900,14 @@ body, html {
     .event-card {
         box-shadow: none; /* Eliminar sombras para un aspecto más limpio */
     }
-
+    
+    .event-background {
+        display: none; /* Ocultar elementos decorativos de fondo */
+    }
 }
+
+
+
 
 
 /* Estilos para teléfonos móviles (hasta 600px) */
@@ -1109,7 +1115,9 @@ body, html {
     }
 
     /* Ajustes para ocultar detalles decorativos que no son esenciales en móviles */
-    .intro-section::before,
+    .intro-section::before {
+        display: none; /* Ocultar elementos decorativos de fondo */
+    }
     .event-background {
         display: none; /* Ocultar elementos decorativos de fondo */
     }
